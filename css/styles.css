@@ -82,9 +82,7 @@ body {
 
 }
 
-/* Main content */
 .main {
-  /* Add a top margin to avoid content overlay */
   margin: 0;
 
 }
@@ -97,7 +95,6 @@ body {
   padding: 0 1em;
   display: flex;
   flex-flow: column;
-  height: 50em;
 }
 
 .title {
@@ -117,9 +114,86 @@ body {
   flex: 1 1 auto;
   height: 100%;
   background-color: var(--bg0);
-  margin: auto 0  ;
+  padding: 1em;
+  font-size: large;
+  text-align: justify;
 }
 
+#profile-pic {
+  float: right;
+  width: 30%;
+  margin: 1em;
+  border-radius: 16px;
+  border: 3px solid var(--blue);
+}
+
+.grid
+{
+  display: grid;
+  grid-template-columns: 8em 1fr 3fr;
+}
+.grid_img
+{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+
+.grid_img img
+{
+  display: block;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.grid article {
+  grid-column: span 2;
+}
+
+.work_info {
+  display: flex;
+  gap: 3em;
+
+}
+.work_year {
+  color: var(--green);
+}
+.work_title {
+  color: var(--red);
+}
+.work_place {
+  color: var(--orange);
+}
+.work_desc {
+  margin: 0.5em 1em;
+}
+
+.contact {
+  width: 100%;
+  text-align: center;
+  margin: 2em 0;
+}
+
+.link:link {
+  color: var(--green);
+  background-color: transparent;
+  text-decoration: none;
+}
+.link:visited {
+  color: var(--bg_diff_green);
+  background-color: transparent;
+  text-decoration: none;
+}
+.link:hover {
+  color: var(--aqua);
+  background-color: transparent;
+  text-decoration: underline;
+}
+.link:active {
+  color: var(--blue);
+  background-color: transparent;
+  text-decoration: underline;
+}
 
 /* The typing effect */
 @keyframes typing {
